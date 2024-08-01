@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=divice">
+        
+        <title>3-2-섹션</title>
+    </head>
+    <body>
+        <div class="wrap">
+            <section class="section1">
+            <h1>섹션1</h1>
+            <div class="container">
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+            </div>
+        </section>
+        <section class="section2">
+            <h1>섹션2</h1>
+            <div class="container">
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+                <div class="item item3"></div>
+                <div class="item item4"></div>
+                <div class="item item5"></div>
+                <div class="item item6"></div>
+            </div>
+        </section>
+        <section class="section3">
+            <h1>섹션3</h1>
+            <div class="container">
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+                <div class="item item3"></div>
+            </div>
+        </section>
+        <section class="section4">
+            <h1>섹션4</h1>
+            <div class="container">
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+                <div class="item item3"></div>
+                <div class="item item4"></div>
+            </div>
+        </section>
+        
+        <style>
+             /* section 1 */
+             .section1 .container{
+                display: flex;
+                background-color: white;
+                height: 200px;
+                gap: 30px;
+                
+            }
+            .section1 .item{
+                width: 20px;
+            }
+            .section1 .item1{
+                background-color: lightgray;
+                flex-grow: 2;
+            }
+            .section1 .item2{
+                background-color: lightgray;
+                flex-grow: 2;
+            }
+
+            /* section 2 */
+            .section2 .container{
+                display: flex;
+                background-color: white;
+                height: 200px;
+                
+            }
+            .section2 .item{
+                width: 20px;
+            }
+            .section2 .item1{
+                background-color: lightgray;
+                flex-grow: 1;
+            }
+            .section2 .item2{
+                background-color: pink;
+                flex-grow: 2;
+            }
+            .section2 .item3{
+                background-color: gray;
+                flex-grow: 1;
+        
+            }
+            .section2 .item4{
+                background-color: rgb(72, 72, 72);
+                flex-grow: 1;
+
+            }
+            .section2 .item5{
+                background-color: rgb(53, 53, 53);
+                flex-grow: 1;
+
+            }
+            .section2 .item6{
+                background-color: black;
+                flex-grow: 1;
+
+            }
+
+            /* section 3 */
+            .section3 .container {
+                display: flex;
+                flex-direction: column; /* 세로 방향으로 변경 */
+                background-color: white;
+                height: 500px;
+                width: 100%;
+                align-items: center;
+                
+            }
+
+            .section3 .item {
+                height: 20px; /* 너비를 높이로 변경 */
+                width: 350px;
+            }
+
+            .section3 .item1 {
+                background-color: lightgray;
+                flex: 1;
+            }
+
+            .section3 .item2 {
+                background-color: rgb(72, 72, 72);
+                flex: 1;
+            }
+
+            .section3 .item3 {
+                background-color: black;
+                flex: 2;
+            }
+
+            /* section 4 */
+            .section4 .container {
+                display: flex;
+                flex-wrap: wrap;
+                background-color: white;
+                height: 200px;
+            }
+
+            .section4 .item {
+                width: 20px;
+            }
+
+            .section4 .item1 {
+                background-color: lightgray;
+                flex-grow: 2;
+                flex-basis: 65%;
+            }
+
+            .section4 .item2 {
+                background-color: rgb(72, 72, 72);
+                flex-grow: 1;
+                flex-basis: 35%;
+            }
+
+            .section4 .item3 {
+                background-color: black;
+                flex-grow: 1;
+                flex-basis: 35%;
+            }
+            .section4 .item4 {
+                background-color: lightgray;
+                flex-grow: 2;
+                flex-basis: 65%;
+            }
+            
+            .wrap{
+                width: 70%;
+                margin: 0 auto;
+            }
+
+        </style>

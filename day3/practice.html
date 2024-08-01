@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=divice">
+        
+        <title>3-3</title>
+    </head>
+    <body>
+        <section class="section">
+            <div class="container">
+                <div class="item">
+                    <image src="france.jpg">
+                    <div class="title">프랑스 7일</div>
+                    <div>100만원~</div>
+                    <button class="button">문의</button>
+                </div>
+                <div class="item">
+                    <img src="france.jpg">
+                    <div class="title">프랑스 7일</div>
+                    <div>100만원~</div>
+                    <button class="button">문의</button>
+                </div>
+                <div class="item">
+                    <img src="france.jpg">
+                    <div class="title">프랑스 7일</div>
+                    <div>100만원~</div>
+                    <button class="button">문의</button>
+                </div>
+                <div class="item">
+                    <img src="france.jpg">
+                    <div class="title">프랑스 7일</div>
+                    <div>100만원~</div>
+                    <button class="button">문의</button>
+                </div>
+                <div class="item">
+                    <img src="france.jpg">
+                    <div class="title">프랑스 7일</div>
+                    <div>100만원~</div>
+                    <button class="button">문의</button>
+                </div>
+                <div class="item">
+                    <img src="france.jpg">
+                    <div class="title">프랑스 7일</div>
+                    <div>100만원~</div>
+                    <button class="button">문의</button>
+            </div>
+        </section>
+        <style>
+            .section{
+                width: 1200px;
+                margin: 0 auto;
+            }
+            .container{
+                display: flex;
+                background-color: white;
+                gap: 20px;
+                width: 100%;
+                flex-wrap: wrap;
+            }
+            .item{
+                background-color: white;
+                width: 30%;
+                height: 500px;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;     
+                position: relative;
+            }
+            .item img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+            .title{
+                font-size: 20px;
+            }
+            .button{
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+            }
+            
+            .wrap{
+                width: 70%;
+                margin: 0 auto;
+            }
+
+        </style>

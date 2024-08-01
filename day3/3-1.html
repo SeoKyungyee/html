@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=divice">
+        
+        <title>3-1-flex-item-detail</title>
+    </head>
+    <body>
+        <h1>Flex item</h1>
+        <div>
+            <h2>flex-grow</h2>
+            <!-- 기본값은 0이다. -->
+            <!-- 컨테이너를 채워주는 아이템의 최대 비율, 이 속성을 사용하게되면 컨테이너를 채울 수 있고, width보다 우선된다.-->
+            <div class="container">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+            </div>
+        </div>
+        <div>
+            <h2>flex-shrink</h2>
+            <!-- 기본값은 1이다. -->
+            <!-- 최소비율 -->
+            <div class="container">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+        </div>
+        <div>
+            <h2>flex-basis</h2>
+            <!-- 상세컨트롤 -->
+            <div class="container">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+        </div>
+        <div>
+            <h2>flex</h2>
+            <!-- 함축 -->
+            <!-- flex: flex-grow flex-shrink flex-basis -->
+            <div class="container">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+        </div>
+        <style>
+            .container{
+                display: flex;
+                background-color: antiquewhite;
+                height: 300px;
+            }
+            .item{
+                width: 50px;
+            }
+            .item1{
+                background-color: rgb(255, 158, 158);
+                flex-grow: 2;
+                flex-shrink: 1;
+                flex-basis: 56%;
+                flex: 1 1 50%;
+            }
+            .item2{
+                background-color: rgb(148, 176, 255);
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 44%;
+            }
+            .item3{
+                background-color: rgb(200, 244, 158);
+                flex-grow: 2;
+                flex-shrink: 1;
+            }
+            .item4{
+                background-color: rgb(205, 148, 200);
+                flex-grow: 2;
+                flex-shrink: 1;
+            }
+            .item5{
+                background-color: rgb(120, 110, 158);
+                flex-grow: 2;
+                flex-shrink: 1;
+            }
+        </style>
+    </body>
+</html>
